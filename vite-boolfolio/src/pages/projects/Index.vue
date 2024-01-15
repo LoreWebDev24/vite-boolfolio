@@ -16,6 +16,7 @@ export default {
     fetchProjects() {
       axios.get(`${this.URL}/projects`)
       .then((res) => {
+        console.log(res)
         this.projects = res.data.results.data
       })
     }
@@ -34,7 +35,7 @@ export default {
         </h1>
       </div>
   
-      <div class="container">
+      <div class="container projects-container">
         <div class="grid">
           <ProjectCard class="card" v-for="project in projects" :project="project" :key="project.id"/>
         </div>

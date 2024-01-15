@@ -1,7 +1,7 @@
 <template>
     <div class="card">
       <h4>{{  project.title }}</h4>
-      <p v-if="project.type">{{  project.type.name }}</p>
+      <h4 class="type" v-if="project.type">{{  project.type.name }}</h4>
     </div>
   </template>
   
@@ -21,5 +21,9 @@
       padding: 20px;
       border-radius: 12px;
       background: lightgray;
+    }
+    .type {
+        color: red;
+        padding-top: 8px;
     }
   </style>

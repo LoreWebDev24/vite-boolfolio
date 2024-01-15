@@ -1,5 +1,5 @@
 <script>
-  import ProjectIndex from 'pages/projects/Index.vue';
+  import ProjectIndex from './pages/projects/Index.vue';
   export default {
     components: {
       ProjectIndex
@@ -13,5 +13,5 @@
 </template>
 
 <style lang="scss">
-@use "main.scss"
+@use "./assets/main.scss"
 </style>
