@@ -15,7 +15,7 @@ const router = createRouter({
 		},
 		{
 			path: '/blog/:slug',
-			name: 'project.show',
+			name: 'projects.show',
 			props: true,
 			component: ProjectShow,
 		},
