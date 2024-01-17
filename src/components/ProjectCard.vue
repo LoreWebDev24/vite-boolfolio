@@ -2,6 +2,7 @@
     <div class="card">
       <h4>{{  project.title }}</h4>
       <h4 class="type" v-if="project.type">{{  project.type.name }}</h4>
+      <router-link :to="{ name: 'projects.show', params: { slug: project.slug }}" >Read this Project</router-link>
     </div>
   </template>
   
